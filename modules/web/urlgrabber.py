@@ -4,6 +4,7 @@ from ..lib.helper import Helper
 from ..web.crawlset import Crawlset
 import urllib.request
 import re
+import gzip
 
 class UrlGrabber(object):
 
@@ -13,16 +14,10 @@ class UrlGrabber(object):
         self.site_root = site_root
 
     def __retrieve_html(self, address):
-        correct_html = False
-        try_count = 0
-        html = ''
-        while not correct_html:
-            try_count += 1
-            Helper.log('Try count', try_count)
-            html = urllib.request.urlopen(address).read() # Sometimes returns weird strings.
-            html = str(html)
-            if(html.find('<html') != -1):
-                correct_html = True
+        with urllib.request.urlopen(address) as resp:
+            html = resp.read()
+            if resp.info().get('Content-Encoding') == 'gzip':
+                html = gzip.decompress(html)
         Helper.log('HTML length', len(html))
         Helper.log('HTML content', html)
         return str(html)
@@ -40,10 +35,7 @@ class UrlGrabber(object):
     def __create_crawlset_lists(self, links):
         new_links = []
         for link in links:
-            link = str(link)
-            if not link.startswith('http'):
-                link = 'http://' + link
-                link.replace('http:///', 'http://')
+            link = Helper.normalize_url_slashes(link)
             if link.find(self.site_root) != -1: # Remove external links
                 # Convert to a crawlset object
                 crawlset = Crawlset(self.current_depth, link)

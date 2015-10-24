@@ -27,6 +27,3 @@ class YCrawler(object):
                     grabber2 = UrlGrabber(current_depth, set1.link, self.site_root)
                     crawlsets2 = grabber2.start_grab()
                     self.crawlset_bucket.extend(crawlsets2)
-
-
-
