@@ -54,6 +54,8 @@ class UrlGrabber(object):
         crawlset = Crawlset(self.current_depth, self.site_address, self.__site_address_content)
         return crawlset
 
+    # Start grabbing the URL at given address
+    # Quite tricky, if you don't understand email me at yunhasnawa@gmail.com
     def grab(self):
         crawlset_list = self.__find_links(self.site_address)
         if crawlset_list is None:

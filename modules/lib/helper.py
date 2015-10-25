@@ -1,5 +1,7 @@
 __author__ = 'Yoppy Yunhasnawa (yunhasnawa@gmail.com)'
 
+import os
+
 class Helper(object):
 
     @staticmethod
@@ -31,3 +33,22 @@ class Helper(object):
                 correct_segments[0] = correct_segments[0] + '/'
                 normalized_url = '/'.join(correct_segments)
         return normalized_url
+
+    @staticmethod
+    def current_address():
+        url = os.environ['HTTP_HOST']
+        uri = os.environ['REQUEST_URI']
+        return url + uri
+
+    @staticmethod
+    def current_uri():
+        uri = os.environ['REQUEST_URI']
+        return uri
+
+    @staticmethod
+    def url_params(url):
+        params = url.split("?")[1]
+        params = params.split('=')
+        pairs = zip(params[0::2], params[1::2])
+        answer = dict((k,v) for k,v in pairs)
+        return answer

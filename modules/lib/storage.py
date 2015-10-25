@@ -1,12 +1,11 @@
 __author__ = 'Yoppy Yunhasnawa (yunhasnawa@gmail.com)'
 
-from ..lib.helper import Helper
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 class Storage(object):
 
     def __init__(self, host='localhost', port=27017):
-        #Helper.log("Initializing storage..")
         self.host = host
         self.port = port
 
@@ -30,3 +29,8 @@ class Storage(object):
     def retrieve_all_documents(self):
         documents = self.__collection.find()
         return documents
+
+    def find_one_by_id(self, id):
+        id = ObjectId(id)
+        document = self.__collection.find_one({'_id':id})
+        return document

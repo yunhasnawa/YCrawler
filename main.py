@@ -6,7 +6,7 @@ from modules.ycrawler import YCrawler
 
 def main():
     Helper.html_header()
-    ycrawler = YCrawler(2, 'http://fun.csie.cgu.edu.tw', 'cgu.edu.tw')
+    ycrawler = YCrawler(2, 'http://www.bbc.com', 'bbc.com')
     ycrawler.crawl()
 
 # Invoke main method

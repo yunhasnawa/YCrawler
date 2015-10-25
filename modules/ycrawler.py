@@ -11,7 +11,8 @@ class YCrawler(object):
         self.site_root = site_root
         self.crawlset_bucket = []
 
-    # Get URLs
+    # Get URLs, currently only support up to 2-level grab.
+    # Quite tricky, if you don't understand email me at yunhasnawa@gmail.com
     def __fill_crawlset_bucket(self):
         current_depth = -1
         if current_depth < self.level:
