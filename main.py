@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3
 __author__ = 'Yoppy Yunhasnawa (yunhasnawa@gmail.com)'
 
 from modules.lib.helper import Helper

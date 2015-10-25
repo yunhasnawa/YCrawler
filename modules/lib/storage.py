@@ -6,7 +6,7 @@ from pymongo import MongoClient
 class Storage(object):
 
     def __init__(self, host='localhost', port=27017):
-        Helper.log("Initializing storage..")
+        #Helper.log("Initializing storage..")
         self.host = host
         self.port = port
 
@@ -26,3 +26,7 @@ class Storage(object):
 
     def insert(self, document):
         self.__collection.insert_one(document)
+
+    def retrieve_all_documents(self):
+        documents = self.__collection.find()
+        return documents

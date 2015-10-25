@@ -16,3 +16,11 @@ class Crawlset(object):
     def to_dictionary(self):
         dictionary = {"level":self.level, "link":self.link, "content":self.content}
         return dictionary
+
+    @staticmethod
+    def list_from_documents(documents):
+        crawlsets = []
+        for document in documents:
+            crawlset = Crawlset(document['level'], document['link'], document['content'])
+            crawlsets.append(crawlset)
+        return crawlsets
