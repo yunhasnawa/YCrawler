@@ -12,18 +12,25 @@ class UrlGrabber(object):
         self.current_depth = current_depth
         self.site_address = site_address
         self.site_root = site_root
+        self.__site_address_content = None
 
-    def __retrieve_html(self, address):
-        with urllib.request.urlopen(address) as resp:
-            html = resp.read()
-            if resp.info().get('Content-Encoding') == 'gzip':
-                html = gzip.decompress(html)
-        Helper.log('HTML length', len(html))
-        Helper.log('HTML content', html)
-        return str(html)
+    @staticmethod
+    def retrieve_html(address):
+        try:
+            with urllib.request.urlopen(address, timeout=5) as resp:
+                html = resp.read()
+                if resp.info().get('Content-Encoding') == 'gzip':
+                    html = gzip.decompress(html)
+            html = str(html)
+        except Exception:
+            html = None
+        return html
 
     def __find_links(self, address):
-        html = self.__retrieve_html(address)
+        html = UrlGrabber.retrieve_html(address)
+        if html is None:
+            return None
+        self.__site_address_content = html
         links = re.findall(r'href=[\'"]?([^\'" >]+)', html)
         Helper.log('Pattern found', len(links))
         # Remove duplicates
@@ -43,11 +50,18 @@ class UrlGrabber(object):
         Helper.log('Fixed URL', len(new_links))
         return new_links
 
-    def start_grab(self):
+    def __create_parent_crawlset(self):
+        crawlset = Crawlset(self.current_depth, self.site_address, self.__site_address_content)
+        return crawlset
+
+    def grab(self):
         crawlset_list = self.__find_links(self.site_address)
+        if crawlset_list is None:
+            return None
         count = 0
         for crawlset in crawlset_list:
             print(str(count) + ') Level: ' + str(crawlset.level) + ' ' + crawlset.link)
             count += 1
-
+        parent_crawlset = self.__create_parent_crawlset()
+        crawlset_list = [parent_crawlset] + crawlset_list
         return crawlset_list

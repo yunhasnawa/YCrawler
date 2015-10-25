@@ -7,16 +7,19 @@ class Helper(object):
         print('Content-type:text/html\r\n\r\n')
 
     @staticmethod
-    def log(label, value):
-        print('-- ' + label + ': ' + str(value))
+    def log(label, value = None):
+        if value is not None:
+            print('-- ' + label + ': ' + str(value))
+        else:
+            print('-- ' + label)
 
     @staticmethod
     def normalize_url_slashes(url, protocol = 'http'):
         url = str(url)
         normalized_url = url
-        Helper.log('Normalizing', url)
         segments = url.split('/')
         if len(segments) > 1:
+            #Helper.log('Normalizing', url)
             correct_segments = []
             for segment in segments:
                 if segment != '':
