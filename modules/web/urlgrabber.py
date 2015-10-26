@@ -18,7 +18,7 @@ class UrlGrabber(object):
     def retrieve_html(address):
         try:
             with urllib.request.urlopen(address, timeout=5) as resp:
-                html = resp.read()
+                html = resp.read().decode('utf-8')
                 if resp.info().get('Content-Encoding') == 'gzip':
                     html = gzip.decompress(html)
             html = str(html)
@@ -31,7 +31,8 @@ class UrlGrabber(object):
         if html is None:
             return None
         self.__site_address_content = html
-        links = re.findall(r'href=[\'"]?([^\'" >]+)', html)
+        #links = re.findall(r'href=[\'"]?([^\'" >]+)', html)
+        links = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', html)
         Helper.log('Pattern found', len(links))
         # Remove duplicates
         links = set(links)
@@ -42,7 +43,11 @@ class UrlGrabber(object):
     def __create_crawlset_lists(self, links):
         new_links = []
         for link in links:
+            Helper.log('Checking Pattern', link)
             link = Helper.normalize_url_slashes(link)
+            # Quick fixes, dirty..
+            link = link.replace("')", '')
+            link = link.replace('><img', '')
             if link.find(self.site_root) != -1: # Remove external links
                 # Convert to a crawlset object
                 crawlset = Crawlset(self.current_depth, link)

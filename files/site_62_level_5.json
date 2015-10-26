@@ -1,0 +1,393 @@
+﻿{level:5,link:"http://5550555.tw/chinanews/chinanews_list.php?page_1=a&s_key=1&start_year=2015&start_month=9&start_day=29",content:{title:"真晨報/東方日報",body:"
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2015年星期一1026   今天
+   近 5日
+   近10日
+   近20日
+   近30日
+  
+首頁要聞政治臺灣焦點社會地方大陸財經彩色人生宗教回上頁大高雄(一)屏　　東台南雲嘉北台灣綜合大高雄(二)屏東綜合中彰投花東﻿　頭條新聞>>順民意 雙北爽放颱風假　【新北市報導】杜鵑颱風還沒離台卻讓雙北因颱風假引發政治漩渦，朱立倫與柯文哲展現順應民意超軟身段，迅速決定從放半天假改放全天假。全文　杜鵑創台鐵 北迴宜蘭線搶通　【記者劉達／台北報導】颱風杜鵑造成台鐵十多處路段受損，最嚴重的北迴線與宜蘭線，終於搶修完成，台鐵預計昨晚九時恢復行駛。全文　晴天放假 柯Ｐ：對不起國家民族　【記者許守仁／台北報導】北北基三市在是否要在二十九日放颱風假上政策反覆，從原先宣布半天，到被罵翻及市長臉書被灌爆後，立即改口宣布全天放假，但昨天台北市卻絲毫沒有感受到半點颱風的威脅；對此，柯文哲市長在回應媒體詢問此次放颱風假是否正確時，他開玩笑的表示，覺得很慚愧，這種天氣放颱風假實在是對不起國家、民族。 全文　雙鐵疏運像逃難 交長致歉　【記者洪運／台北報導】颱風杜鵑打亂中秋節連續假期雙鐵疏運，引起民怨。交通部長陳建宇昨天表示，有改善空間，他除向旅客致歉，也盼大家多體諒。全文　郝龍斌：颱風假一起承擔　【基隆報導】國民黨基隆市立委參選人郝龍斌昨天說，放颱風假是「父子騎驢」問題，出現爭議時，要透過溝通、協調，「大家一起承擔」，才能圓滿處理。全文　天氣難料 企業體諒　【記者高照／台北報導】颱風杜鵑逐漸遠離，全台各地無風雨，民眾賺了一天颱風假，工商企業雖成本增加，但也表示，「預測的事誰都說不準」，只要是憑專業判斷，不是亂放，雇主都可以體諒。全文　雙鐵票一年內可退換票　【記者洪運／台北報導】交通部昨天表示，民眾預購台鐵、高鐵車票，若遇颱風等天災無法搭乘，一年內都可退票或換票，不會只限當日，不用擔心。全文　真晨報業有限公司電話: 07 5550555 傳真: 07 5550533高雄市鼓山區大順一路439號11-2樓　
+第11217期 開獎日期: 2015-10-24
+第98704期 開獎日期: 2015-10-19
+第98703期 開獎日期: 2015-10-23
+第104053期 開獎日期: 2015-10-24
+第100008期 開獎日期: 2015-10-23
+第100017期 開獎日期: 2015-10-24
+第100021期 開獎日期: 2015-10-24
+
+022734184535280117043732272525014116434746281438352081023190839116436947
+ 
+//     table_1=document.all.table_news.style.height;
+//   alert(table_1);
+
+  function start_1(){
+     start_month=form_1.start_month.options[form_1.start_month.selectedIndex].value;
+     start_year=form_1.start_year.options[form_1.start_year.selectedIndex].value;
+     para='chinanews_list.php?s_key=0&start_month='+start_month+'&start_year='+start_year;
+     location.href=para;
+  }
+  function subject_z(news_url){
+     location.href=news_url;
+//     window.open(news_url);
+//alert(year2);
+  }
+
+  function start_3(){
+     kind='';
+s_key='1';
+       hidden_2a.style.visibility="visible";
+     year_2=year2.options[year2.selectedIndex].value;
+     para='chinanews_list.php?year2='+year_2+'&s_key='+s_key+'&kind='+kind;
+     location.href=para;
+//alert(year2);
+  }
+
+    function enter_1(no){
+       if(no==1){para='http://www.yam.com/';}
+       if(no==2){para='http://www.sina.com.tw/';}
+       if(no==3){para='http://www.pchome.com.tw/';}
+       if(no==4){para='http://tw.msn.com/';}
+       if(no==5){para='http://www.hinet.net/';}
+       if(no==6){para='http://tw.yahoo.com';}
+      window.open(para);
+    }
+
+    function Click_1(htm_z){
+     location.href=htm_z;
+//       window.open(htm_z);
+    }
+
+    function Click_2(no){
+     s_key='1';
+start_month='10';
+start_day='29';
+start_year='2015';
+start_month_2='09';
+start_day_2='29';
+       if(s_key==2){
+          start_month=start_month_2;
+          start_day=start_day_2;
+       }
+//alert(start_day_2);
+       if(no==1){para='chinanews_list.php?page_1=a&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==2){para='chinanews_list.php?page_1=b&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==3){para='chinanews_list.php?page_1=c&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==4){para='chinanews_list.php?page_1=d&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==51){para='chinanews_list.php?page_1=j&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==52){para='chinanews_list.php?page_1=k&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==53){para='chinanews_list.php?page_1=m&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==54){para='chinanews_list.php?page_1=g&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==55){para='chinanews_list.php?page_1=s&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==56){para='chinanews_list.php?page_1=t&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==57){para='chinanews_list.php?page_1=n&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==61){para='chinanews_list.php?page_1=o&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==62){para='chinanews_list.php?page_1=h&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==63){para='chinanews_list.php?page_1=l&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==64){para='chinanews_list.php?page_1=y&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==65){para='chinanews_list.php?page_1=z&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==71){para='chinanews_list.php?page_1=e&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==72){para='chinanews_list.php?page_1=r&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==8){para='chinanews_list.php?page_1=p&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==81){para='chinanews_list.php?page_1=v&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==9){para='chinanews_list.php?page_1=q&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==10){para='chinanews_list.php?page_1=u&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==11){para='chinanews_list.php?page_1=w&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==12){para='chinanews_list.php?page_1=f&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+       if(no==13){para='chinanews_list.php?page_1=i&s_key=1&start_year='+start_year+'&start_month='+start_month+'&start_day='+start_day;}
+//alert(para);
+       location.href=para;
+    }
+
+    function Click_3(no){
+       if(no==111){
+          document.all.address.func_0.style.visibility='hidden';
+          document.all.address.func_2.style.visibility='hidden';
+          document.all.address.func_1.style.visibility='hidden';
+          font_c3.style.backgroundColor='#ffc125';
+          font_c3.style.color='#cc0000';
+          div_131.style.visibility='hidden';
+          div_7.style.visibility='visible';
+          font_c1.style.color='#ffc125';
+          font_c1.style.backgroundColor='#cc0000';
+       }else{
+          if(no==112){
+             div_8.style.visibility='visible';
+             font_c2.style.color='#ffc125';
+             font_c2.style.backgroundColor='#cc0000';
+          }else{
+//alert(1);
+             if(no==113){
+                if(div_131.style.visibility=='hidden'){
+                   div_131.style.visibility='visible';
+                   font_c3.style.backgroundColor='#cc0000';
+                   font_c3.style.color='#ffc125';
+                   document.all.address.func_0.style.visibility='visible';
+                   document.all.address.func_2.style.visibility='hidden';
+                   document.all.address.func_1.style.visibility='visible';
+                }else{
+                   div_131.style.visibility='hidden';
+                   font_c3.style.backgroundColor='#ffc125';
+                   font_c3.style.color='#cc0000';
+                   document.all.address.func_0.style.visibility='hidden';
+                   document.all.address.func_2.style.visibility='hidden';
+                   document.all.address.func_1.style.visibility='hidden';
+                }
+             }
+          }
+       }
+    }
+
+    function Click_31(no){
+      if(no==111){div_7.style.visibility='hidden';font_c1.style.backgroundColor='#ffc125';font_c1.style.color='#cc0000';}
+      if(no==112){div_8.style.visibility='hidden';font_c2.style.backgroundColor='#ffc125';font_c2.style.color='#cc0000';}
+    }
+
+
+
+    function email_a(){
+      href_1='555_email_main.php';
+//alert(href_1);
+      window.open(href_1);
+    }
+
+
+    function Click_a(no){
+      hidden_2a.style.visibility="visible";
+      if(no==1){para='chinanews_list.php?kind=B&s_key=4';}
+      if(no==2){para='chinanews_list.php?kind=C&s_key=4';}
+      if(no==3){para='chinanews_list.php?kind=A&s_key=4';}
+      if(no==4){para='chinanews_list.php?kind=D&s_key=4';}
+      if(no==5){para='chinanews_list.php?kind=E&s_key=4';}
+      if(no==6){para='chinanews_list.php?kind=F&s_key=4';}
+      location.href=para;
+
+    }
+
+
+    function Click_4(no_w){
+       kind='';
+// alert(kind);
+       document.all.form_a.adv_x2.style.visibility='hidden';
+       form_a.adv_x2.value=no_w;
+       if(kind=='A' || kind=='B' || kind=='C'){
+          document.all.form_a.adv_x3.style.visibility='hidden';
+          document.all.form_a.adv_x4.style.visibility='hidden';
+          form_a.adv_x3.value=no_w;
+          form_a.adv_x4.value=no_w;
+       }
+       hidden_2a.style.visibility="visible";
+    }
+    function Click_5(no){
+          form_1.adv_2.style.visibility='hidden';
+          hidden_2a.style.visibility="visible";
+    }
+
+    function key_3(no_1){
+       if(no_1!=2){
+          hidden_3a.style.visibility="visible";
+          form_1.adv_2.style.backgroundColor="#cc0000";
+          form_1.adv_2.style.Color="#ffc125";
+       }else{
+          form_1.adv_2.style.backgroundColor="#ffc125";
+          hidden_3a.style.visibility="hidden";
+       } 
+    }
+
+
+function win(){
+    para='http://5win.tw/5win.php';
+    window.open(para);
+}
+
+
+function left_1(no_1){
+    div_131.style.visibility='hidden';
+    hidden_a.style.visibility='hidden';
+    document.all.address.func_0.style.visibility='hidden';
+    document.all.address.func_2.style.visibility='hidden';
+    document.all.address.func_1.style.visibility='hidden';
+}
+
+
+
+function left_0(no_1){
+   document.all.address.func_2.style.visibility='hidden';
+   hidden_b.style.visibility='visible';
+   hidden_a.style.visibility='hidden';
+}
+
+function over_2(no_1){
+   if(no_1==1 || no_1==2 || no_1==3 || no_1==4 || no_1==5 || no_1==6 ){
+//      document.all.a_1.style.visibility='visible';
+   }else{
+      document.all.a_1.style.visibility='hidden';
+   }
+}
+
+function left_s(no_1){
+      div_131.style.visibility='hidden';
+      document.all.func_1.style.visibility='hidden';
+}
+function left_2(no_1){
+   var no_2;
+   var no_3;
+   email_1=document.all.address.email.value;
+   if(!email_1){
+      alert('對不起! email信箱不能空白');
+      no_2=1;
+   }else{
+      if(email_1.indexOf('@')==-1||email_1.indexOf('@')==1||email_1.indexOf('@')==email_1.length||email_1.indexOf('.')==-1||email_1.indexOf('.')==1||email_1.indexOf('.')==email_1.length||email_1.indexOf('\'')!=-1){
+        alert("對不起! email信箱格式錯誤!!");
+         no_2=2;
+      }else{
+         if(!document.all.address.title.value){
+            alert("對不起! 主旨不能空白!!");
+            no_3=1;
+         }
+      }
+   }
+   if(no_2){
+      document.all.address.email.style.backgroundColor='#ffffcc';
+      document.all.address.email.focus();
+      return false;
+   }else{
+      if(no_3==1){
+         document.all.address.title.style.backgroundColor='#ffffcc';
+         document.all.address.title.focus();
+         return false;
+      }else{
+         hidden_a.style.visibility='visible';
+         document.all.address.func_0.style.visibility='visible';
+         document.all.address.func_2.style.visibility='visible';
+         document.all.address.func_1.style.visibility='hidden';
+      }
+   }
+// alert(email_1);
+}
+
+function photo_1(x1){
+// clearInterval(tid);
+// clearInterval(tid1);
+
+ if(x1==100){
+    form_1.start_year.style.display='inline';
+    form_1.start_month.style.display='inline';
+    form_1.start_day.style.display='inline';
+ }else{
+//    c_1.innerText="";
+    a_1.style.display='none';
+    file_date=file_date1.value; 
+    if(x1==1){ajpg=file_date+'1.jpg';hidden_0.value=1;} 
+    if(x1==2){ajpg=file_date+'2.jpg';hidden_0.value=2;} 
+    if(x1==3){ajpg=file_date+'3.jpg';hidden_0.value=3;} 
+    if(x1==4){ajpg=file_date+'4.jpg';hidden_0.value=4;} 
+    if(x1==5){ajpg=file_date+'5.jpg';hidden_0.value=5;} 
+    if(x1==6){ajpg=file_date+'6.jpg';hidden_0.value=6;} 
+    if(x1==7){ajpg=file_date+'7.jpg';hidden_0.value=7;} 
+    if(x1==8){ajpg=file_date+'8.jpg';hidden_0.value=8;} 
+    if(x1==91){ajpg=file_date+'91.jpg';hidden_0.value=9;} 
+    if(x1==92){ajpg=file_date+'92.jpg';hidden_0.value=21;} 
+    if(x1==93){ajpg=file_date+'93.jpg';hidden_0.value=22;} 
+    if(x1==94){ajpg=file_date+'94.jpg';hidden_0.value=23;} 
+    if(x1==95){ajpg=file_date+'95.jpg';hidden_0.value=24;} 
+    if(x1==96){ajpg=file_date+'96.jpg';hidden_0.value=25;} 
+    if(x1==101){ajpg=file_date+'101.jpg';hidden_0.value=10;} 
+    if(x1==102){ajpg=file_date+'102.jpg';hidden_0.value=31;} 
+    if(x1==103){ajpg=file_date+'103.jpg';hidden_0.value=32;} 
+    if(x1==104){ajpg=file_date+'104.jpg';hidden_0.value=33;} 
+    if(x1==111){ajpg=file_date+'111.jpg';hidden_0.value=11;} 
+    if(x1==112){ajpg=file_date+'112.jpg';hidden_0.value=41;} 
+    if(x1==113){ajpg=file_date+'113.jpg';hidden_0.value=42;} 
+    if(x1==114){ajpg=file_date+'114.jpg';hidden_0.value=43;} 
+    if(x1==12){ajpg=file_date+'12.jpg';hidden_0.value=12;} 
+    if(x1==13){ajpg=file_date+'13.jpg';hidden_0.value=13;} 
+    if(x1==14){ajpg=file_date+'14.jpg';hidden_0.value=14;} 
+    images_0.src=ajpg;
+    aa0.style.left=100;
+    aa0.style.visibility="hidden";
+    images_0.style.width=1000;
+    images_0.style.height=1530; 
+    b1.style.display="inline";
+    images_0.style.visibility="visible";
+    top_0.style.visibility="hidden";
+    top_01.style.visibility="hidden";
+  }
+}
+
+  function photo_a(){
+       aa0.style.left=100;
+       aa0.style.visibility="hidden";
+  }
+
+function photo_b(){
+  form_1.start_year.style.display='inline';
+  form_1.start_month.style.display='inline';
+  form_1.start_day.style.display='inline';
+  aa0.style.left=100;
+  b1.style.display="none";
+  images_0.style.visibility="hidden";
+  top_0.style.visibility="visible";
+  top_01.style.visibility="visible";
+  images_0.style.width=0;
+  aa0.style.visibility="hidden";
+  a_1.style.display='inline';
+
+}
+
+function home(){
+   para='chinanews_list.php';
+   location.href=para;
+}
+
+function Click_y(s){
+       top_ea='161';
+top_e='134';
+top_fa='931';
+top_f='899';
+    if(document.all.font_y5.style.color=="red"){
+       document.all.div_y.style.visibility="hidden";
+       document.all.font_y5.style.color="white";
+       document.all.table_news.style.top=top_e;
+       document.all.div_7.style.top=top_e;
+       document.all.div_8.style.top=top_f;
+    }else{
+       document.all.div_y.style.visibility="visible";
+       document.all.font_y5.style.color="red";    
+       document.all.table_news.style.top=top_ea;
+       document.all.div_7.style.top=top_ea;
+       document.all.div_8.style.top=top_fa;
+
+    }
+}
+function back1(){
+   window.history.go(-1);
+}
+
+function over_1(){
+//   high_1=div_a1.style.height;
+//   alert(high_1);
+}
+ 
+"}}

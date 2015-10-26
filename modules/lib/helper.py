@@ -52,3 +52,9 @@ class Helper(object):
         pairs = zip(params[0::2], params[1::2])
         answer = dict((k,v) for k,v in pairs)
         return answer
+
+    @staticmethod
+    def module_dir():
+        now = os.path.dirname(os.path.realpath("__file__"))
+        module_dir = str(now)
+        return module_dir
