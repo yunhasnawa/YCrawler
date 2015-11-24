@@ -51,7 +51,7 @@ class Helper(object):
         print('Content-type:text/html\r\n\r\n')
 
     @staticmethod
-    def log(label, value = None):
+    def log(label, value=None):
         if value is not None:
             print('-- ' + label + ': ' + str(value))
         else:
